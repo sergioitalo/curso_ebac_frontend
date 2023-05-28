@@ -77,3 +77,19 @@ button:hover {
   background-color: #575400;
   color: white;
 }
+
+.mensagem_erro {
+  color: red;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  display: none;
+  font-size: 12px;
+  text-align: center;
+}
+
+.mensagem_sucesso {
+  color: #00FF00;
+  margin-top: 30px;
+  padding: 16px;
+  display: none;
+}
