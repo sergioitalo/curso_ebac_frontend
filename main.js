@@ -1,8 +1,7 @@
-const formulario = document.getElementsByTagName('form')
+const formulario_italo = document.getElementsByTagName('form')
 
-formulario.addEventListener('submit', function(evento) {
+formulario_italo.addEventListener('submit', function(evento){
   evento.preventDefault()
 
 
 })
-
