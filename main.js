@@ -15,6 +15,9 @@ if (validaForm(inputA.value, inputB.value) === true) {
   const mensagemSucesso = document.querySelector('.mensagem_sucesso')
   mensagemSucesso.style.display = 'block'
 
+  inputA.value = ''
+  inputB.value = ''
+
 } else {
   const mensagemErro = document.querySelector('.mensagem_erro')
   mensagemErro.style.display = 'block'
@@ -36,5 +39,9 @@ inputB.addEventListener('keyup', function(evento) {
     inputB.style.outline = '2px solid #D4CE07 '
     const mensagemErro = document.querySelector('.mensagem_erro')
     mensagemErro.style.display = 'none'
+    inputB.style.border = 'none'
+
   }
+
 })
+
