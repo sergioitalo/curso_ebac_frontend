@@ -1,32 +1,40 @@
-const validacaoForm = function (a, b) {
-  const number1 = a
-  const number2 = b
-  parseFloat(number1, number2)
-  const resposta = number2 > number1
-  return resposta
-}
-
 const formulario = document.querySelector('form')
-console.log(formulario)
+const inputA = document.querySelector('.numberA')
+const inputB = document.querySelector('.numberB')
+
+const validaForm = function(a, b) {
+  const number1 = Number(a)
+  const number2 = Number(b)
+  return number2 > number1
+}
 
 formulario.addEventListener('submit', function(evento) {
   evento.preventDefault()
 
-  const inputA = document.querySelector('.numberA')
-  const inputB = document.querySelector('.numberB')
+if (validaForm(inputA.value, inputB.value) === true) {
+  const mensagemSucesso = document.querySelector('.mensagem_sucesso')
+  mensagemSucesso.style.display = 'block'
 
-  if (validacaoForm(inputA.value, inputB.value)) {
-    const sucessoMsg = document.querySelector('.mensagem_sucesso')
-    sucessoMsg.style.display = 'block'
+} else {
+  const mensagemErro = document.querySelector('.mensagem_erro')
+  mensagemErro.style.display = 'block'
+  
+}
 
-    inputA.value = ''
-    inputB.value = ''
-
-  } else {
-    const erroMsg = document.querySelector('.mensagem_erro')
-    erroMsg.style.display = 'block'
-
-  }
 })
 
+inputB.addEventListener('keyup', function(evento) {
+  console.log(evento)
 
+  if(validaForm(inputA.value, evento.target.value) === false) {
+    inputB.style.outline = '2px solid red'
+    inputB.style.border = 'none'
+    const mensagemErro = document.querySelector('.mensagem_erro')
+    mensagemErro.style.display = 'block'
+
+  } else {
+    inputB.style.outline = '2px solid #D4CE07 '
+    const mensagemErro = document.querySelector('.mensagem_erro')
+    mensagemErro.style.display = 'none'
+  }
+})
