@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #0D0A0D;
+  background-color: #413D3C;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
   width: 100%;
   background-color: white;
   margin: 250px auto;
-  background-color: #0D0A0D;
+  background-color: #413D3C;
 
 }
 
@@ -70,7 +70,7 @@ input {
 
 input:focus {
   outline-color:  #D4CE07;;
-  border: 2px solid  #D4CE07;
+  border: 2px solid #D4CE07;
 }
 
 button:hover {
@@ -80,10 +80,10 @@ button:hover {
 
 .mensagem_erro {
   color: red;
-  font-weight: lighter;
+  font-weight: 450;
   margin-bottom: 10px;
   display: none;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -92,4 +92,10 @@ button:hover {
   margin-top: 30px;
   padding: 16px;
   display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
 }
