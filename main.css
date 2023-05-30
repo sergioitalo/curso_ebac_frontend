@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #413D3C;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background-color: white;
+  margin: 250px auto;
+  background-color: #413D3C;
+
+}
+
+.container section img {
+  height: 120px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 42px;
+  color: #D4CE07;
+}
+
+section form input,
+section form button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 16px 70px;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+button {
+  cursor: pointer;
+  font-weight: bolder;
+  border: none;
+  background-color: #D4CE07;
+  font-size: 16px;
+
+  
+}
+
+form {
+  margin-top: 30px;
+}
+
+input {
+  border: none;
+  transition: all 0.25s ease-out;
+  background-color: #D4D5D9;
+  border: 2px solid #D4D5D9;
+}
+
+input:focus {
+  outline-color:  #D4CE07;;
+  border: 2px solid #D4CE07;
+}
+
+button:hover {
+  background-color: #575400;
+  color: white;
+}
+
+.mensagem_erro {
+  color: red;
+  font-weight: 450;
+  margin-bottom: 10px;
+  display: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.mensagem_sucesso {
+  color: #00FF00;
+  margin-top: 30px;
+  padding: 16px;
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
