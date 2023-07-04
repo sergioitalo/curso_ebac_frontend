@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+
+}
+
+form {
+  width: 400px;
+  padding: 30px;
+  border-radius: 5px;
+  border-left: 8px solid #20638C;
+  background-color: #fff;
+  
+  
+}
+.campos {
+  margin-bottom: 16px;
+}
+
+h1 {
+  color: #01355D;
+  margin-bottom: 60px;
+  
+}
+
+.botoes {
+  display: flex;
+  gap: 30px;
+}
+
+label {
+  color: #01355D;
+}
+
+
+
+
